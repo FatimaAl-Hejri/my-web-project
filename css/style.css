@@ -1,0 +1,224 @@
+        /* شريط التنقل */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* يوزع العناصر اليمين لليمن واليسار لليسار */
+            background-color: #ad1457;
+            padding: 10px 30px;
+            margin-bottom: 20px; /* مسافة تفصل الشريط عن محتوى الصفحة */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* الروابط (يظهر في اليمين) */
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* اللوجو الدائري (يظهر في اليسار) */
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* تخلي الصورة دائرة */
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+          body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #fce4ec; 
+            padding: 0px; 
+            margin: 0px;
+        }
+        .form-container { 
+            background: white;
+             padding: 30px;
+             border-radius: 15px; 
+             box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+             width: 400px; margin: auto; }
+        h2 {
+             color: #d81b60; 
+             text-align: center; }
+        input, textarea {
+             width: 100%; 
+             padding: 10px;
+             margin: 10px 0;
+             border: 1px solid #ddd; 
+             border-radius: 5px;
+             box-sizing: border-box; }
+        button {
+             width: 100%;
+             padding: 10px;
+             background-color: #ad1457;
+             color: white;
+             border: none;
+             border-radius: 5px; 
+             cursor: pointer;
+             font-size: 16px; }
+        button:hover {
+             background-color: #880e4f; }
+             
+
+
+
+             
+/* --- [2026/1/3 م 10:04] ♡♡♡ --- */
+
+/* --- تنسيق صفحة المنتجات --- */
+
+/* الواجهه الي تجمع كل الكروت للمنتجات */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* المسافة بين الكروت */
+    padding: 40px 20px;
+}
+
+/* تصميم كرت لكل منتج  */
+.product-card {
+    background: #fff;
+    width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+/*تأثير لما يمر الماوس على الكرت يتحرك  */
+.product-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(216, 27, 96, 0.2); /* ظل وردي خفيف */
+}
+
+/* تنسيق صورة المنتج داخل الكرت */
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /*عشان تكون كل الصور نفس الحجم او المقاس  */
+}
+
+/* تنسيق أزرار الشراء أو الإضافة */
+.buy-btn {
+    background-color: #ad1457;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #d81b60;
+}
+
+
+/* عشان الخط العربي*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Tajawal', sans-serif; /* تغيير الخط لكل المربعات */
+}
+
+.product-card {
+    background: white;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center; /* توسيط كل شي داخل المربع */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* تصغير حجم الخط للعناوين */
+.product-card h3 {
+    font-size: 17px; 
+    color: #ad1457;
+    margin: 10px 0;
+}
+
+/* تصغير وتوسيط الوصف */
+.product-card p {
+    font-size: 13px;
+    color: #666;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* تنسيق السعر */
+.product-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #d81b60;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* تنسيق صفحة سلة المشتريات */
+.cart-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6) !important; /* خلفية شفافة */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th {
+    background-color: #ad1457; /* اللون الوردي الغامق  */
+    color: white;
+    padding: 12px;
+    text-align: right;
+}
+
+.cart-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.total-section {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad1457;
+}
+
+.btn-clear {
+    color: #ff5252;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-clear:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
